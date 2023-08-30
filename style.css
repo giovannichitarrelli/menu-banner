@@ -6,10 +6,11 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 header {
-    background: url("capa.png");
+    background: url("capa2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -31,13 +32,19 @@ header nav ul {
     display: flex;
 }
 
-.desktop ul>li {
+header ul>li {
     padding: 0 15px;
+    font-size: 18px;
+}
+
+header ul>li:hover {
+    border-bottom: solid #006aff;
 }
 
 
 header nav p {
     font-weight: bold;
+    font-size: 24px;
 }
 
 
@@ -48,15 +55,21 @@ header nav p {
 
 .header-content h1 {
     font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.header-content p {
+    margin: 30px 0;
 }
 
 button {
-    background-color: aqua;
-    padding: 10px 20px;
+    background-color: #006aff;
+    padding: 10px 50px;
     border-radius: 4px;
     font-weight: bold;
     border: 0;
     color: white;
+    cursor: pointer;
 }
 
 .mobile {
@@ -66,13 +79,16 @@ button {
 
 @media (max-width: 768px) {
 
+    header {
+        background-position-x: 70%;
+    }
+
     nav.desktop {
         display: none;
     }
 
     nav.mobile {
         display: flex;
-
     }
 
     .botao-menu-mobile {
@@ -91,12 +107,11 @@ button {
         display: none;
         font-weight: bold;
         padding-top: 50px;
-        background: #191919;
+        background: #141414;
 
     }
 
-    nav.mobile li {
-        width: 100%;
+    header ul li {
         padding: 2%;
     }
 
